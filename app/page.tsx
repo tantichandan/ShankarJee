@@ -22,7 +22,7 @@ const Home = async () => {
         <div className='flex flex-col justify-center'>
 
           <p className='small-text'>
-            BholeBaba make something great
+            Amazon ki koi bhi product scrapped kare. Link copy karke submit karo, to know the price history of the product
 
             <Image 
               src="/assets/icons/arrow-right.svg"
@@ -34,7 +34,7 @@ const Home = async () => {
 
           <h1 className='head-text'>
 
-            Unlease the power of lord <span className='text-primary'> shiva</span>
+            Rajpal jee, ek bar try karke batana<span className='text-primary'> easy hai</span>
           </h1>
 
           <p className='mt-6'>
@@ -55,7 +55,7 @@ const Home = async () => {
 
     <section className='trending-section'>
        <h2 className='section-text'>
-        trending
+        Trending
        </h2>
 
        <div className='flex flex-wrap gap-x-8 gap-y-16'>

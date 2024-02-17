@@ -25,7 +25,7 @@ const Navbar = () => {
                 />
 
                 <p className='nav-logo'>
-                    BholeBaba<span className='text-primary'>HelpMe</span>
+                    Price<span className='text-primary'>Dekho</span>
                 </p>
 
 
