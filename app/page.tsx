@@ -21,7 +21,7 @@ const Home = async () => {
       <div className='flex max-xl:flex-col gap-16'>
         <div className='flex flex-col justify-center'>
 
-          <p className='small-text'>
+          <p className='text-lg text-gray-600 mb-6 leading-relaxed'>
             Amazon ki koi bhi product scrapped kare. Link copy karke submit karo, to know the price history of the product
 
             <Image 
@@ -32,12 +32,12 @@ const Home = async () => {
             />
           </p>
 
-          <h1 className='head-text'>
+          <h1 className='text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight'>
 
-            Rajpal jee, ek bar try karke batana<span className='text-primary'> easy hai</span>
+            Get the price histiry to purchase a product on<span className='text-primary'> right time</span>
           </h1>
 
-          <p className='mt-6'>
+          <p className='text-lg md:text-xl text-gray-700 mb-8 leading-relaxed'>
             Powerful selfserve product and growth analytic to help you convert, engage, and retain more
           </p>
 

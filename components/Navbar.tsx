@@ -1,60 +1,38 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import React from 'react'
-
-const navIcons =[
-    { src: '/assets/icons/search.svg', alt: 'search'},
-    { src: '/assets/icons/black-heart.svg', alt: 'heart'},
-    { src: '/assets/icons/user.svg', alt: 'user'}
-]
+import Link from 'next/link';
+import Image from 'next/image';
+import React from 'react';
 
 const Navbar = () => {
   return (
-   
-    <header className='w-full'>
-        <nav className='nav'>
-            <Link href="/" className='flex items-center gap-1'>
+    <header className='bg-white +shadow-md'>
+      <nav className='container mx-auto flex items-center justify-between py-4'>
+        {/* Logo and Title */}
+        <Link href="/" className='flex items-center gap-4'>
+          <Image 
+            src="/assets/icons/logo.svg" 
+            width={30}
+            height={30}
+            alt='logo'
+            className='object-contain'
+          />
+          <p className='text-xl md:text-2xl lg:text-3xl font-semibold text-gray-900 flex items-center'>
+            <span className='text-blue-600'>Price</span>
+            <span className='text-gray-700'>Dekho</span>
+          </p>
+        </Link>
 
-                <Image src="/assets/icons/logo.svg" 
-                width={27}
-                height={27}
-                alt='logo'
-                
-                
-                
-                />
-
-                <p className='nav-logo'>
-                    Price<span className='text-primary'>Dekho</span>
-                </p>
-
-
-            </Link>
-
-            <div className='flex items-center gap-5'>
-                {navIcons.map((icon)=>(
-
-                    <Image 
-
-                    key={icon.alt}
-                    src={icon.src}
-                    alt={icon.alt}
-                    width={28}
-                    height={28}
-                    className='object-contain'
-                    
-                    
-                    />
-
-                ))
-
-                }
-
-            </div>
-
-        </nav>
+        {/* Navigation Links */}
+        <div className='flex gap-4 items-center'>
+          <Link href="/products" className='text-gray-800 hover:text-blue-600 font-medium text-sm md:text-base lg:text-lg transition-colors duration-300'>
+            Products
+          </Link>
+          <Link href="/contact" className='text-gray-800 hover:text-blue-600 font-medium text-sm md:text-base lg:text-lg transition-colors duration-300'>
+            Contact
+          </Link>
+        </div>
+      </nav>
     </header>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
